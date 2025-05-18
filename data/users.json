@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1,
+    "username": "alice",
+    "password": "hashed_password"
+  }
+]

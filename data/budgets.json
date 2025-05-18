@@ -1,0 +1,10 @@
+[
+  {
+    "user_id": 1,
+    "monthly_limit": 500.0,
+    "categories": {
+      "Groceries": 200.0,
+      "Transport": 100.0
+    }
+  }
+]
