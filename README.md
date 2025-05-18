@@ -79,6 +79,7 @@ cupcake/
 ```
 
 🛠️ Getting Started
+
 Clone the repo
 ```
 git clone https://github.com/yourusername/cupcake.git
