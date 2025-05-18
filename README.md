@@ -80,19 +80,22 @@ cupcake/
 
 🛠️ Getting Started
 Clone the repo
-
+```
 git clone https://github.com/yourusername/cupcake.git
 cd cupcake
+```
 
 
 Install dependencies
-
+```
 pip install Flask
+```
 
 
 Run the app
-
+```
 python app.py
+```
 
 
 Open your browser and go to http://localhost:5000
