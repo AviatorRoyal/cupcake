@@ -17,6 +17,7 @@ Cupcake is a lightweight Flask app to help you manage your money, track your exp
 ---
 
 ## 🗂️ Project Structure
+'''
 cupcake/
 ├── app.py # Main Flask app
 ├── static/
@@ -31,7 +32,7 @@ cupcake/
 │ └── budgets.json # Budget data
 └── utils/
 └── json_utils.py # JSON file read/write helpers
-
+'''
 
 
 ---
