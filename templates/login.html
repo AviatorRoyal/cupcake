@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        body {
+            background: #f8f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #fff;
+            padding: 2rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            width: 320px;
+        }
+        .login-container h2 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #333;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 0.6rem;
+            background: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .login-container button:hover {
+            background: #574fd6;
+        }
+        .login-container .signup-link {
+            display: block;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .login-container .signup-link a {
+            color: #6c63ff;
+            text-decoration: none;
+        }
+        .login-container .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post" action="/login">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="/signup">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>

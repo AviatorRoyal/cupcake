@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Settings</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Set Monthly Budget</h2>
+    <form action="/set_budget" method="post">
+        <input name="monthly_limit" placeholder="Monthly Limit" type="number" required>
+        <input name="groceries" placeholder="Groceries Budget" type="number">
+        <input name="transport" placeholder="Transport Budget" type="number">
+        <input name="others" placeholder="Others Budget" type="number">
+        <button type="submit">Save Budget</button>
+    </form>
+
+    {% if budget %}
+        <h3>Current Budget</h3>
+        <p>Total Limit: ₹{{ budget.monthly_limit }}</p>
+        <ul>
+            {% for category, amount in budget.categories.items() %}
+                <li>{{ category }}: ₹{{ amount }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>

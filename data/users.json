@@ -1,7 +1,12 @@
 [
-  {
-    "id": 1,
-    "username": "alice",
-    "password": "hashed_password"
-  }
+    {
+        "id": 1,
+        "username": "alice",
+        "password": "hashed_password"
+    },
+    {
+        "id": 2,
+        "username": "Ramanuj",
+        "password": "scrypt:32768:8:1$QBrIQw0FV2Eb4BZ2$3720b797bbac18670a0e09769b72074eb9a23972c1afcc10ccbdf09777b8b8e7181c5bdf2c7310d9f3c550452e9396ebbf771f00fa3ec4d8dc70122e1edfc98d"
+    }
 ]
